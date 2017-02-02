@@ -1,2 +1,2 @@
 # libft
-My libft for the 42 school
+My libft for 42
