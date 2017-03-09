@@ -6,7 +6,7 @@
 #    By: kneth <kneth@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/08 14:23:14 by kneth             #+#    #+#              #
-#    Updated: 2017/03/08 15:17:45 by kneth            ###   ########.fr        #
+#    Updated: 2017/03/09 13:25:25 by kneth            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ all:$(NAME)
 $(NAME): $(OBJ)
 	@ar rcs $(NAME) $(OBJ)
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
+$(OBJDIR)/%.o: $(SRCDIR)/%.c includes/libft.h
 	@/bin/mkdir -p $(OBJDIR)
 	@$(CC) $(CFLAGS) -I./includes -c -o $@ $<
 
